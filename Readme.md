@@ -1,7 +1,7 @@
-# Личный проект «Седона» 
+# Личный проект «Седона»
 
-* Студент: [Сергей Никишин](https://up.htmlacademy.ru/adaptive/24/user/1875121).
-* Наставник: `Неизвестно`.
+- Студент: [Сергей Никишин](https://up.htmlacademy.ru/adaptive/24/user/1875121).
+- Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev)
 
 ---
 
