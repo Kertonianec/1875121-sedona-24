@@ -53,11 +53,11 @@
             <h2 class="feedback__title">Представтесь:</h2>
             <p class="feedback__group">
               <label class="feedback__info" for="first-name">Имя*:</label>
-              <input class="feedback__field" type="text" id="first-name" name="first-name" placeholder="Петр">
+              <input class="feedback__field" type="text" id="first-name" name="first-name" placeholder="Петр" required>
             </p>
             <p class="feedback__group">
               <label class="feedback__info" for="last-name">Фамилия*:</label>
-              <input class="feedback__field" type="text" id="last-name" name="last-name" placeholder="Иванов">
+              <input class="feedback__field" type="text" id="last-name" name="last-name" placeholder="Иванов" required>
             </p>
             <p class="feedback__group">
               <label class="feedback__info" for="patronymic">Отчество:</label>
@@ -67,36 +67,36 @@
           <section class="contacts">
             <h2 class="contacts__title">Контактная информация:</h2>
             <p class="contacts__phone">
-              <label class="contacts__phone--number" for="number">Контактный телефон*:</label>
-              <input class="contacts__field"  placeholder="Введите телефон" type="text" name="number" id="number">
+              <label class="contacts__phone" for="tel">Контактный телефон*:</label>
+              <input class="contacts__field"  placeholder="Введите телефон" type="tel" name="tel" id="tel" required>
             </p>
             <p class="contacts__email">
               <label class="contacts__mail" for="email">Электронная почта*:</label>
-              <input class="contacts__field"  placeholder="Введите e-mail" type="email" name="email" id="email">
+              <input class="contacts__field"  placeholder="Введите e-mail" type="email" name="email" id="email" required>
             </p>
           </section>
           <section class="impression">
             <h2 class="impression__title">Ваше общее впечатление:</h2>
             <ul class="impression__list">
               <li class="impression__item">
-                <label class="impression__control">
+                <label class="impression__control control">
                   <input class="visually-hidden" type="radio" name="impression-all" value="positive" checked>
-                  <span class="impression__control--mark"></span>
-                <span class="impression__control--label">Скорее положительное</span>
+                  <span class="control__mark"></span>
+                <span class="control__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="impression__item">
-                <label class="impression__control">
+                <label class="impression__control control">
                   <input class="visually-hidden" type="radio" name="impression-all" value="negative">
-                  <span class="impression__control--mark"></span>
-                <span class="impression__control--label">Скорее отрицательное</span>
+                  <span class="control__mark"></span>
+                <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="impression__item">
-                <label class="impression__control">
+                <label class="impression__control control">
                   <input class="visually-hidden" type="radio" name="impression-all" value="difficult">
-                  <span class="impression__control--mark"></span>
-                <span class="impression__control--label">Затрудняюсь ответить</span>
+                  <span class="control__mark"></span>
+                <span class="control__label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
@@ -105,31 +105,31 @@
             <h2 class="attractions__title">Посещенные достопримечательности:</h2>
             <ul class="attractions__list">
               <li class="attractions__item">
-                <label class="attractions__control">
+                <label class="attractions__control control">
                   <input class="visually-hidden" type="checkbox" name="Devils Bridge" checked>
-                  <span class="attractions__control--mark"></span>
-                <span class="attractions__control--label">Мост Дьявола</span>
+                  <span class="control__mark"></span>
+                <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="attractions__item">
-                <label class="attractions__control">
+                <label class="attractions__control control">
                   <input class="visually-hidden" type="checkbox" name="The Bell Mountain" checked>
-                  <span class="attractions__control--mark"></span>
-                <span class="attractions__control--label">Гора-Колокол</span>
+                  <span class="control__mark"></span>
+                <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="attractions__item">
-                <label class="attractions__control">
+                <label class="attractions__control control">
                   <input class="visually-hidden" type="checkbox" name="Slide Park" checked>
-                  <span class="attractions__control--mark"></span>
-                <span class="attractions__control--label">Слайд-парк</span>
+                  <span class="control__mark"></span>
+                <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="attractions__item">
-                <label class="attractions__control">
+                <label class="attractions__control control">
                   <input class="visually-hidden" type="checkbox" name="Red Rocks">
-                  <span class="attractions__control--mark"></span>
-                <span class="attractions__control--label">Красные скалы</span>
+                  <span class="control__mark"></span>
+                <span class="control__label">Красные скалы</span>
                 </label>
               </li>
             </ul>
@@ -148,23 +148,52 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="blog__text" href="#">#visitsedona</a>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
-        </li>
-      </ul>
-      <p class="copyright__text">Разработано
-        <a class="copyright__link">
-          <img src="./img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
-        </a>
-      </p>
+      <div class="page-footer__social social">
+        <a class="social__blog" href="#">#visitsedona</a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано
+          <a class="copyright__link">
+            <img src="./img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+          </a>
+        </p>
+      </div>
     </footer>
+
+    <div class="modal">
+      <section class="modal__failure">
+        <h2 class="modal__title">
+          Что-то пошло не так!
+        </h2>
+        <p class="modal__subtitle">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <a class="button modal__button" href="#">Ok</a>
+      </section>
+    </div>
+
+    <div class="modal">
+      <section class="modal__success">
+        <h2 class="modal__title">
+          Ваш отзыв отправлен!
+        </h2>
+        <p class="modal__subtitle">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+        </p>
+        <a class="button modal__button" href="#">Закрыть окно</a>
+      </section>
+    </div>
+
   </body>
 </html>

@@ -35,7 +35,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page-catalog">
+    <main class="catalog">
       <h1 class="visually-hidden">Sedona</h1>
       <section class="catalog__foto">
         <div class="catalog__wrapper">
@@ -49,6 +49,7 @@
           </header>
           <ul class="catalog__list">
             <li class="catalog__item">
+              <img class="catalog__image" src="./img/road-small.jpg" width="280" height="280" alt="Неродные просторы">
               <h3 class="catalog__title">
                 Неродные просторы
               </h3>
@@ -56,11 +57,14 @@
                 Автор фото: Борис
               </p>
               <p class="catalog__number">
-                <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
-                1350
+                <a class="catalog__buttton" href="#">
+                  <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
+                </a>
+                <span class="catalog__like">1350</span>
               </p>
             </li>
             <li class="catalog__item">
+              <img class="catalog__image" src="./img/vegetation-small.jpg" width="280" height="280" alt="Местная растительность">
               <h3 class="catalog__title">
                 Местная растительность
               </h3>
@@ -68,11 +72,14 @@
                 Автор фото: Сергей
               </p>
               <p class="catalog__number">
-                <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
-                143
+                <a class="catalog__buttton" href="#">
+                  <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
+                </a>
+                <span class="catalog__like">143</span>
               </p>
             </li>
             <li class="catalog__item">
+              <img class="catalog__image" src="./img/serpentine-small.jpg" width="280" height="280" alt="Дорога на север">
               <h3 class="catalog__title">
                 Дорога на север
               </h3>
@@ -80,11 +87,14 @@
                 Автор фото: Петр
               </p>
               <p class="catalog__number">
-                <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
-                96
+                <a class="catalog__buttton" href="#">
+                  <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
+                </a>
+                <span class="catalog__like">96</span>
               </p>
             </li>
             <li class="catalog__item">
+              <img class="catalog__image" src="./img/devil's-bridge-small.jpg" width="280" height="280" alt="Мост Дьявола">
               <h3 class="catalog__title">
                 Мост Дьявола
               </h3>
@@ -92,8 +102,10 @@
                 Автор фото: Антон
               </p>
               <p class="catalog__number">
-                <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
-                254
+                <a class="catalog__buttton" href="#">
+                  <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
+                </a>
+                <span class="catalog__like">254</span>
               </p>
             </li>
           </ul>
@@ -107,27 +119,32 @@
           <p class="catalog__subtitle">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
+          <img class="catalog__video" src="./img/video-presentation-small.jpg" width="320" height="201" alt="Видеопрезентация">
         </header>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="blog__text" href="#">#visitsedona</a>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
-        </li>
-      </ul>
-      <p class="copyright__text">Разработано
-        <a class="copyright__link">
-          <img src="./img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
-        </a>
-      </p>
+      <div class="page-footer__social social">
+        <a class="social__blog" href="#">#visitsedona</a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано
+          <a class="copyright__link">
+            <img src="./img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
