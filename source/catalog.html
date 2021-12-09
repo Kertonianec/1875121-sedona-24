@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -13,7 +14,7 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -57,9 +58,9 @@
                 Автор фото: Борис
               </p>
               <p class="catalog__number">
-                <a class="catalog__buttton" href="#">
+                <button class="catalog__buttton" type="button">
                   <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
-                </a>
+                </button>
                 <span class="catalog__like">1350</span>
               </p>
             </li>
@@ -72,9 +73,9 @@
                 Автор фото: Сергей
               </p>
               <p class="catalog__number">
-                <a class="catalog__buttton" href="#">
+                <button class="catalog__buttton" type="button">
                   <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
-                </a>
+                </button>
                 <span class="catalog__like">143</span>
               </p>
             </li>
@@ -87,9 +88,9 @@
                 Автор фото: Петр
               </p>
               <p class="catalog__number">
-                <a class="catalog__buttton" href="#">
+                <button class="catalog__buttton" type="button">
                   <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
-                </a>
+                </button>
                 <span class="catalog__like">96</span>
               </p>
             </li>
@@ -102,9 +103,9 @@
                 Автор фото: Антон
               </p>
               <p class="catalog__number">
-                <a class="catalog__buttton" href="#">
+                <button class="catalog__buttton" type="button">
                   <img src="./img/like-icon.svg" width="23" height="21" alt="Лайки">
-                </a>
+                </button>
                 <span class="catalog__like">254</span>
               </p>
             </li>
@@ -112,7 +113,7 @@
         </div>
       </section>
       <section class="catalog__video">
-        <header class="catalog__header">
+        <div class="catalog__header">
           <h2 class="catalog__title">
             Все еще сомневаетесь?
           </h2>
@@ -120,7 +121,13 @@
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
           <img class="catalog__video" src="./img/video-presentation-small.jpg" width="320" height="201" alt="Видеопрезентация">
-        </header>
+          <div class="controls" id="video-controls">
+            <button class="controls__restart" type="button"><span class="visually-hidden">restart</span></button>
+            <input class="controls__range" type="range" value="20">
+            <button class="controls__subtitles" type="button"><span class="visually-hidden">subtitles</span></button>
+            <button class="controls__full-screen" type="button"><span class="visually-hidden">full-screen</span></button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
