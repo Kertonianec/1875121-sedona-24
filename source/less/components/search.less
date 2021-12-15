@@ -1,11 +1,34 @@
 .search {
+  width: 320px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
+.search__wrapper {
+  display: grid;
+  grid-template-columns: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
 }
 
 .search__title {
