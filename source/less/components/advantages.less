@@ -1,12 +1,41 @@
 .advantages {
+  width: 320px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
+
+.advantages__wrapper {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+  }
 }
 
 .advantages__header {
@@ -29,11 +58,25 @@
 }
 
 .advantages__list {
+  width: 320px;
   background-color: #ffffff;
-  margin-top: 0;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 256px 256px 256px 256px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .advantages__item--first {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
   color: #ffffff;
   background-color: #81b3d2;
   background-image: url("../../img/photo-city-small.jpg");
@@ -58,10 +101,16 @@
 }
 
 .advantages__list--unsorted {
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  flex-wrap: wrap;
   color: #000000;
 }
 
 .advantages__item--second {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
   color: #ffffff;
   background-color: #81b3d2;
   background-image: url("../../img/devil\'s-bridge-small.jpg");
@@ -69,13 +118,19 @@
 }
 
 .advantages__item--third {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
   background-color: #eeeeee;
 }
 
 .advantages__item--fourth {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
   background-color: #eeeeee;
 }
 
 .advantages__item--fifth {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
   background-color: #eeeeee;
 }

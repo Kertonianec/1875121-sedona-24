@@ -1,3 +1,17 @@
+.map {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
 .map__title {
   background-image: url("../../img/map-small.jpg");
   background-repeat: no-repeat;
