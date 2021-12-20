@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
@@ -65,10 +66,11 @@
               <input class="feedback__field" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
             </p>
           </section>
-          <section class="contacts">
+          <section class="feedback__contacts contacts">
             <h2 class="contacts__title">Контактная информация:</h2>
             <p class="contacts__phone">
               <label class="contacts__number" for="tel">Контактный телефон*:</label>
+              <label class="contacts__number--desctop" for="tel">Телефон*:</label>
               <input class="contacts__field"  placeholder="Введите телефон" type="tel" name="tel" id="tel" required>
             </p>
             <p class="contacts__email">
@@ -76,7 +78,7 @@
               <input class="contacts__field"  placeholder="Введите e-mail" type="email" name="email" id="email" required>
             </p>
           </section>
-          <section class="impression">
+          <section class="feedback__impression impression">
             <h2 class="impression__title">Ваше общее впечатление:</h2>
             <ul class="impression__list">
               <li class="impression__item">
@@ -102,7 +104,7 @@
               </li>
             </ul>
           </section>
-          <section class="attractions">
+          <section class="feedback__attractions attractions">
             <h2 class="attractions__title">Посещенные достопримечательности:</h2>
             <ul class="attractions__list">
               <li class="attractions__item">
@@ -135,7 +137,7 @@
               </li>
             </ul>
           </section>
-          <section class="describe">
+          <section class="feedback__describe describe">
             <h2 class="describe__title">Опишите свои эмоции:</h2>
               <p class="describe__info">
                 <label class="visually-hidden" for="describe-text">Введите текст</label>
@@ -149,8 +151,8 @@
       </section>
     </main>
     <footer class="page-footer">
+      <a class="page-footer__blog" href="#">#visitsedona</a>
       <div class="page-footer__social social">
-        <a class="social__blog" href="#">#visitsedona</a>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
