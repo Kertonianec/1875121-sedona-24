@@ -2,7 +2,7 @@
   width: 320px;
   background-image: url("../../img/background-image-small.jpg");
   background-repeat: no-repeat;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
@@ -69,7 +69,7 @@
 }
 
 .feedback__impression {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -78,6 +78,8 @@
 .feedback__attractions {
   grid-column: 1 / 3;
   grid-row: 3 / 4;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -89,8 +91,18 @@
 }
 
 .feedback__describe {
+  display: flex;
+  flex-direction: column;
   grid-column: 1 / 3;
   grid-row: 4 / 5;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 961px;
+  }
 }
 
 .feedback__group:last-of-type {

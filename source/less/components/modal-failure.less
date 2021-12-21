@@ -1,4 +1,5 @@
 .modal-failure {
+  width: 320px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -6,5 +7,10 @@
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+  }
 }
