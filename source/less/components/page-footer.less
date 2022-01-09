@@ -16,7 +16,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: baseline;
     width: 663px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,9 +27,44 @@
 }
 
 .page-footer__blog {
+  margin: 0 auto;
+  color: #000000;
   width: 166px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 39px;
+  margin-bottom: 34px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 166px;
+    margin: 0;
+    margin-right: 97px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 254px;
+  }
 }
 
 .page-footer a {
   color: #000000;
+}
+
+.page-footer__copyright {
+  width: 143px;
+  font-size: 14px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 144px;
+    margin: 0;
+    margin-left: 105px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 261px;
+  }
 }
