@@ -9,19 +9,25 @@
   background-color: #ffffff;
 
   @media (max-width: @mobile-width-only) {
-    background: url("../../img/triangle-big.svg") bottom/1200px 57px no-repeat,
-      url("../../img/background-image-small.jpg") top center/320px 389px no-repeat;
+    background-image: url("../../img/triangle-big.svg"), url("../../img/background-image-small.jpg");
+    background-position: bottom, top center;
+    background-size: 1200px 57px, 320px 389px;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: @tablet-width) {
     height: 518px;
-    background: url("../../img/triangle-big.svg") bottom/1200px 57px no-repeat,
-      url("../../img/background-image-middle.jpg") top center/768px 517px no-repeat;
+    background-image: url("../../img/triangle-big.svg"), url("../../img/background-image-middle.jpg");
+    background-position: bottom, top center;
+    background-size: 1200px 57px, 768px 518px;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../../img/triangle-big.svg") bottom/1200px 57px no-repeat,
-      url("../../img/background-image-big.jpg") top center/1200px 517px no-repeat;
+    background-image: url("../../img/triangle-big.svg"), url("../../img/background-image-big.jpg");
+    background-position: bottom, top center;
+    background-size: 1200px 57px, 1200px 518px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -35,13 +41,9 @@
   @media (min-width: @tablet-width) {
     height: 518px;
     background-image: url("../../img/main-logotype-middle.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../../img/main-logotype-big.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
   }
 }

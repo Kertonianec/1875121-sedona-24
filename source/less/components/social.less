@@ -12,22 +12,7 @@
 }
 
 .social__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 46px;
-  height: 48px;
-  background-color: #81b3d2;
   margin-right: 6px;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #5496bd;
-  }
 }
 
 .social__item:last-child {
@@ -43,8 +28,13 @@
   text-decoration: none;
 }
 
-.social__icon {
-  display: block;
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 46px;
+  text-align: center;
   background-color: #81b3d2;
   fill: #ffffff;
 
@@ -53,6 +43,7 @@
   }
 
   &:active {
+    background-color: #5496bd;
     fill: fade(#ffffff, 30%);
   }
 }
