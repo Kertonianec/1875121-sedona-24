@@ -7,19 +7,42 @@
   line-height: 26px;
   margin: 0;
   margin-top: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin: 0;
+    margin-bottom: 54.5px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 77px;
+  }
 }
 
 .impression__list {
-  margin-top: 25px;
-  margin-bottom: 31px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .impression__item {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 11px;
+  padding: 0;
   text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .impression__item:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
