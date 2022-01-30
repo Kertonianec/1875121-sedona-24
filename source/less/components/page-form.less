@@ -34,7 +34,7 @@
     height: 290px;
     background-image: url("../img/triangle-big.svg"), url("../img/background-image-middle@1x.jpg");
     background-size: 1200px 57px, 100% auto;
-    margin-bottom: 64px;
+    margin-bottom: 63px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/triangle-big.svg"), url("../img/background-image-middle@2x.jpg");
@@ -43,6 +43,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    height: 301px;
     background-image: url("../img/triangle-big.svg"), url("../img/background-image-big@1x.jpg");
     background-size: 1200px 57px, 100% auto;
     margin-bottom: 114px;
@@ -56,17 +57,21 @@
 
 .page-form__logo {
   height: 158px;
-  background-image: url("../img/sedona-small.svg");
+  background-image: url("../img/sedona-big.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 45px 51px;
+  background-size: 229px 39px;
 
   @media (min-width: @tablet-width) {
     height: 290px;
-    background-image: url("../img/sedona-middle.svg");
+    background-image: url("../img/sedona-big.svg");
+    background-size: 461px, 350px;
+    background-position: 51% 45%;
   }
 
   @media (min-width: @desktop-width) {
     height: 301px;
     background-image: url("../img/sedona-big.svg");
+    background-position: 50% 46%;
   }
 }

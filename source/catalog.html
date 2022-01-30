@@ -13,8 +13,12 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="main-nav__logo main-nav__logo--active">
-          <img src="./img/logotype.svg" width="102" height="84" alt="Логотип Седоны">
+        <a class="main-nav__logo main-nav__logo--active" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logotype-big.svg">
+            <source media="(min-width: 768px)" srcset="./img/logotype-middle.svg">
+            <img src="./img/logotype.svg" width="102" height="84" alt="Логотип Седоны">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list-left site-list">
@@ -80,14 +84,16 @@
           </header>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/road-big@1x.webp 1x, ./img/road-big@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/road-middle@1x.webp 1x, ./img/road-middle@2x.webp 2x">
-                <source type="image/webp" srcset="./img/road-small@1x.webp 1x, ./img/road-small@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="./img/road-big@1x.jpg 1x, ./img/road-big@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/road-middle@1x.jpg 1x, ./img/road-middle@2x.jpg 2x">
-                <img class="catalog__image" src="./img/road-small@1x.jpg" srcset="./img/road-small@2x.jpg 2x" alt="Неродные просторы">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/road-big@1x.webp 1x, ./img/road-big@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/road-middle@1x.webp 1x, ./img/road-middle@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/road-small@1x.webp 1x, ./img/road-small@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="./img/road-big@1x.jpg 1x, ./img/road-big@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/road-middle@1x.jpg 1x, ./img/road-middle@2x.jpg 2x">
+                  <img class="catalog__image" src="./img/road-small@1x.jpg" srcset="./img/road-small@2x.jpg 2x" alt="Неродные просторы">
+                </picture>
+              </a>
               <div class="catalog__box">
                 <h3 class="catalog__title">
                   Неродные просторы
@@ -106,14 +112,16 @@
               </div>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/vegetation-big@1x.webp 1x, ./img/vegetation-big@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/vegetation-middle@1x.webp 1x, ./img/vegetation-middle@2x.webp 2x">
-                <source type="image/webp" srcset="./img/vegetation-small@1x.webp 1x, ./img/vegetation-small@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="./img/vegetation-big@1x.jpg 1x, ./img/vegetation-big@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/vegetation-middle@1x.jpg 1x, ./img/vegetation-middle@2x.jpg 2x">
-                <img class="catalog__image" src="./img/vegetation-small@1x.jpg" srcset="./img/vegetation-small@1x@2x.jpg 2x" alt="Неродные просторы">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/vegetation-big@1x.webp 1x, ./img/vegetation-big@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/vegetation-middle@1x.webp 1x, ./img/vegetation-middle@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/vegetation-small@1x.webp 1x, ./img/vegetation-small@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="./img/vegetation-big@1x.jpg 1x, ./img/vegetation-big@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/vegetation-middle@1x.jpg 1x, ./img/vegetation-middle@2x.jpg 2x">
+                  <img class="catalog__image" src="./img/vegetation-small@1x.jpg" srcset="./img/vegetation-small@1x@2x.jpg 2x" alt="Неродные просторы">
+                </picture>
+              </a>
               <div class="catalog__box">
                 <h3 class="catalog__title">
                   Местная растительность
@@ -132,14 +140,16 @@
               </div>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/serpentine-big@1x.webp 1x, ./img/serpentine-big@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/serpentine-middle@1x.webp 1x, ./img/serpentine-middle@2x.webp 2x">
-                <source type="image/webp" srcset="./img/serpentine-small@1x.webp 1x, ./img/serpentine-small@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="./img/serpentine-big@1x.jpg 1x, ./img/serpentine-big@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/serpentine-middle@1x.jpg 1x, ./img/serpentine-middle@2x.jpg 2x">
-                <img class="catalog__image" src="./img/serpentine-small@1x.jpg" srcset="./img/serpentine-small@2x.jpg 2x" alt="Неродные просторы">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/serpentine-big@1x.webp 1x, ./img/serpentine-big@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/serpentine-middle@1x.webp 1x, ./img/serpentine-middle@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/serpentine-small@1x.webp 1x, ./img/serpentine-small@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="./img/serpentine-big@1x.jpg 1x, ./img/serpentine-big@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/serpentine-middle@1x.jpg 1x, ./img/serpentine-middle@2x.jpg 2x">
+                  <img class="catalog__image" src="./img/serpentine-small@1x.jpg" srcset="./img/serpentine-small@2x.jpg 2x" alt="Неродные просторы">
+                </picture>
+              </a>
               <div class="catalog__box">
                 <h3 class="catalog__title">
                   Дорога на север
@@ -158,14 +168,16 @@
               </div>
             </li>
             <li class="catalog__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/devil's-bridge-big@1x.webp 1x, ./img/devil's-bridge-big@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/devil's-bridge-middle@1x.webp 1x, ./img/devil's-bridge-middle@2x.webp 2x">
-                <source type="image/webp" srcset="./img/devil's-bridge-small@1x.webp 1x, ./img/devil's-bridge-small@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="./img/devil's-bridge-big@1x.jpg 1x, ./img/devil's-bridge-big@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/devil's-bridge-middle@1x.jpg 1x, ./img/devil's-bridge-middle@2x.jpg 2x">
-                <img class="catalog__image" src="./img/devil's-bridge-small@1x.jpg" srcset="./img/devil's-bridge-small@2x.jpg 2x" alt="Неродные просторы">
-              </picture>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/devil's-bridge-big@1x.webp 1x, ./img/devil's-bridge-big@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/devil's-bridge-middle@1x.webp 1x, ./img/devil's-bridge-middle@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/devil's-bridge-small@1x.webp 1x, ./img/devil's-bridge-small@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="./img/devil's-bridge-big@1x.jpg 1x, ./img/devil's-bridge-big@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/devil's-bridge-middle@1x.jpg 1x, ./img/devil's-bridge-middle@2x.jpg 2x">
+                  <img class="catalog__image" src="./img/devil's-bridge-small@1x.jpg" srcset="./img/devil's-bridge-small@2x.jpg 2x" alt="Неродные просторы">
+                </picture>
+              </a>
               <div class="catalog__box">
                 <h3 class="catalog__title">
                   Мост Дьявола
@@ -262,7 +274,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__img" width="27" height="35">
               <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
             </svg>

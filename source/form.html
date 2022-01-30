@@ -13,8 +13,12 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="main-nav__logo main-nav__logo--active">
-          <img src="./img/logotype.svg" width="102" height="84" alt="Логотип Седоны">
+        <a class="main-nav__logo main-nav__logo--active" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logotype-big.svg">
+            <source media="(min-width: 768px)" srcset="./img/logotype-middle.svg">
+            <img src="./img/logotype.svg" width="102" height="84" alt="Логотип Седоны">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list-left site-list">
@@ -150,7 +154,7 @@
                 <label class="attractions__control control">
                   <input class="visually-hidden control__input" type="checkbox" name="Devils Bridge" checked>
                   <span class="control__mark"></span>
-                  <span class="control__label control__label">Мост Дьявола</span>
+                  <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="attractions__item">
@@ -223,7 +227,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__img" width="27" height="35">
               <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
             </svg>

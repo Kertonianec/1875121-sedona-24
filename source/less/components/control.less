@@ -10,6 +10,11 @@
   @media (min-width: @tablet-width) {
     margin-left: 75px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 215px;
+    margin-left: 80px;
+  }
 }
 
 .control {
@@ -20,8 +25,8 @@
 
 .control__mark {
   position: absolute;
-  top: 2px;
-  left: 0;
+  top: 1px;
+  left: -4px;
   width: 46px;
   height: 46px;
   border: 5px solid #f2f2f2;
@@ -30,6 +35,12 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    top: 2px;
+    left: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 3px;
   }
 }
 
@@ -70,10 +81,20 @@
   position: absolute;
   top: 11px;
   left: 11.5px;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   background-color: #333333;
   border-radius: 50%;
   border: 3px solid #333333;
   content: "";
+
+  @media (min-width: @tablet-width) {
+    top: 12px;
+    left: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 11px;
+    left: 13px;
+  }
 }
