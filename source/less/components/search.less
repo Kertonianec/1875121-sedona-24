@@ -49,6 +49,10 @@
     margin-bottom: 34px;
     padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .search__text {
@@ -63,10 +67,21 @@
     width: 435px;
     padding: 0;
     margin-bottom: 38px;
+    text-indent: -1px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 43px;
+    margin-bottom: 44px;
+  }
+}
+
+.search__text br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
 
@@ -102,7 +117,7 @@
     margin: 0;
     margin-right: 155px;
     margin-left: 155px;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: @desktop-width) {
